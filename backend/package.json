@@ -1,0 +1,17 @@
+
+{
+  "name": "Arthi-Gadgets",
+  "version": "1.0.0",
+  "description": "Node.js Express API project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js" 
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

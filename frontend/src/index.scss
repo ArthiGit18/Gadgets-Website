@@ -1,0 +1,58 @@
+.hero_content{
+    display: grid;
+    grid-template-columns: 450px auto;
+    align-items: center;
+    column-gap: 30px;
+    padding: 40px;
+    margin: auto;
+
+    .hero_note{
+        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero_img{
+        position: relative;
+
+        .hero_img_content{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            .hero_img_point1,
+            .hero_img_point2,
+            .hero_img_point3,
+            .hero_img_point4
+            {
+                padding: 10px;
+                border-radius: 20px;
+                background-color: #385790;
+                width: 150px;
+                text-align: center;
+            }
+
+            .hero_img_point1{
+                position: absolute;
+                top: 200px;
+                right: 0;
+            }
+            .hero_img_point2{
+                position: absolute;
+                top: 300px;
+                right: -40px;
+            }
+            .hero_img_point3{
+                position: absolute;
+                top: 400px;
+                right: 40px;
+            }
+            .hero_img_point4{
+                position: absolute;
+                top: 500px;
+                right: 150px;
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Lobster&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+
+:root {
+  --font-small: 15px;
+  --font-medium: 18px;
+  --font-large: 20px;
+  --font-subheader: 35px;
+  --font-extralarge: 40px;
+}
+
+h2{
+  font-size: var(--font-extralarge);
+}
+
+.container {
+  height: auto;
+  width: 1440px;
+  /* width: 100%; */
+  overflow: hidden;
+  margin: auto;
+}
+
+.hero_wrapper {
+  height: 100vh;
+  color: white;
+  width: 100%;
+  margin: auto;
+  background: radial-gradient(circle at right, #501c5f , #080808);
+}
