@@ -1,4 +1,4 @@
-.hero_content{
+.hero_content {
     display: grid;
     grid-template-columns: 450px auto;
     align-items: center;
@@ -6,16 +6,16 @@
     padding: 40px;
     margin: auto;
 
-    .hero_note{
+    .hero_note {
         row-gap: 20px;
         display: flex;
         flex-direction: column;
     }
 
-    .hero_img{
+    .hero_img {
         position: relative;
 
-        .hero_img_content{
+        .hero_img_content {
             position: absolute;
             top: 0;
             right: 0;
@@ -23,8 +23,7 @@
             .hero_img_point1,
             .hero_img_point2,
             .hero_img_point3,
-            .hero_img_point4
-            {
+            .hero_img_point4 {
                 padding: 10px;
                 border-radius: 20px;
                 background-color: #385790;
@@ -32,27 +31,75 @@
                 text-align: center;
             }
 
-            .hero_img_point1{
+            .hero_img_point1 {
                 position: absolute;
                 top: 200px;
                 right: 0;
             }
-            .hero_img_point2{
+
+            .hero_img_point2 {
                 position: absolute;
                 top: 300px;
                 right: -40px;
             }
-            .hero_img_point3{
+
+            .hero_img_point3 {
                 position: absolute;
                 top: 400px;
                 right: 40px;
             }
-            .hero_img_point4{
+
+            .hero_img_point4 {
                 position: absolute;
                 top: 500px;
                 right: 150px;
             }
         }
     }
-   
+
+}
+
+// Navbar
+
+.navbar_wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 500px auto;
+    margin: 20px 0;
+
+    .nav_logo{
+        margin-right: 30px;
+    }
+
+    .nav_items {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        // width: 100%;
+
+        ul {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+
+            li {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: var(--font-medium);
+                }
+            }
+        } 
+    }
+
+    .nav_actions{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        column-gap: 20px;
+    }
 }
