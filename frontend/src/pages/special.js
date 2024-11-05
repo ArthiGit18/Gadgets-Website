@@ -20,6 +20,7 @@ const Special = () => {
                         <img src="/assets/special/1.jpg" alt="earbuds" />
                     </div>
                 </div>
+                
             </div>
         </div>
     )

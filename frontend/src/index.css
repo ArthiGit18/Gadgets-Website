@@ -43,7 +43,9 @@ Button{
   color: white;
   width: 100%;
   margin: auto;
-  background: radial-gradient(circle at right, #501c5f , #080808);
+  /* background-image: linear-gradient(90deg, rgba(21, 21, 21, 0.06) 0%, rgba(21, 21, 21, 0.06) 13%,rgba(18, 18, 18, 0.06) 13%, rgba(18, 18, 18, 0.06) 19%,rgba(196, 196, 196, 0.06) 19%, rgba(196, 196, 196, 0.06) 46%,rgba(7, 7, 7, 0.06) 46%, rgba(7, 7, 7, 0.06) 96%,rgba(162, 162, 162, 0.06) 96%, rgba(162, 162, 162, 0.06) 100%),linear-gradient(90deg, rgba(29, 29, 29, 0.08) 0%, rgba(29, 29, 29, 0.08) 44%,rgba(154, 154, 154, 0.08) 44%, rgba(154, 154, 154, 0.08) 57%,rgba(139, 139, 139, 0.08) 57%, rgba(139, 139, 139, 0.08) 88%,rgba(47, 47, 47, 0.08) 88%, rgba(47, 47, 47, 0.08) 89%,rgba(221, 221, 221, 0.08) 89%, rgba(221, 221, 221, 0.08) 97%,rgba(231, 231, 231, 0.08) 97%, rgba(231, 231, 231, 0.08) 100%),linear-gradient(90deg, rgba(2, 2, 2, 0.05) 0%, rgba(2, 2, 2, 0.05) 10%,rgba(124, 124, 124, 0.05) 10%, rgba(124, 124, 124, 0.05) 35%,rgba(10, 10, 10, 0.05) 35%, rgba(10, 10, 10, 0.05) 88%,rgba(253, 253, 253, 0.05) 88%, rgba(253, 253, 253, 0.05) 100%),linear-gradient(90deg, rgb(10,10,10),rgb(92,0,236),rgb(75,15,118)); */
+  /* background-image: radial-gradient(circle at center center, transparent 0%,rgb(19,0,71) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(19,0,71),rgb(19,0,71)); */
+  background-image: radial-gradient(circle at center center, transparent 0%,rgb(62,0,79) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(62,0,79),rgb(62,0,79));
 }
 
 
@@ -75,4 +77,36 @@ Button{
 .service_wrapper > * {
   position: relative;
   z-index: 2;
+}
+
+.testimonial-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mySwiper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.testimonial-card {
+  width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+  transition: opacity 0.3s, transform 0.3s;
+  text-align: center;
+}
+
+.swiper-slide-active .testimonial-card {
+  opacity: 1;
+  transform: scale(1.1);
 }
