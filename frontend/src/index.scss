@@ -280,9 +280,11 @@
 
 // testimonial
 .testimonial_wrapper {
-    height: 100vh;
+    // height: 100vh;
     background-color: #080808;
     color: white;
+    padding: 50px 0;
+
     h2{
     text-align: center;
     padding: 30px 0;
@@ -296,6 +298,7 @@
         display: flex;
         align-items: center;
         column-gap: 20px;
+        padding: 50px 0;
         
         .slides {
             display: flex;
@@ -392,5 +395,38 @@
         justify-content: space-between;
         margin: 40px 0;
 
+        h3{
+            margin: 20px 0;
+        }
+
+        
+        .footer_contact{
+            display: flex;
+            column-gap: 10px;
+            align-items: flex-start;
+        }
+
+        .links_footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 10px;
+            p a{
+            text-decoration: none;
+            color: white;
+            }
+        }
+
+        .social_footer{
+            display: flex;
+            column-gap: 10px;
+        }
+    }
+
+    .footer_copyright{
+        background-color: #385790;
+        padding: 20px 0;
+        text-align: center;
     }
 }

@@ -18,6 +18,7 @@ const Main = () => {
         <Sellers />
         <Explore />
         <Testimonial />
+        <hr></hr>
         <Footer />
     </div>
   )

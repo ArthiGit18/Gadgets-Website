@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
                     <div className='social_links'>
                         <h3>Social Links</h3>
-                        <div className='links_footer'>
+                        <div className='social_footer'>
                             <InstagramIcon />
                             <XIcon />
                             <FacebookOutlinedIcon />
@@ -61,7 +61,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
+            <div className='footer_copyright'>
+                <p>@2024 GadgetBazar. Shop With Us</p>
+            </div>
         </div>
     )
 }
