@@ -2,12 +2,12 @@ import React from 'react'
 import { Navbar } from './navbar'
 import Tradebar from './tradebar'
 
-const Hero = () => {
+const Hero = ({ aboutRef }) => {
     return (
         <div className='hero_wrapper'>
-
+            <Navbar aboutRef={aboutRef} />
             <div className='container'>
-                <Navbar />
+
                 <div className='hero_content'>
                     <div className='hero_note'>
                         <h2>Introducing Our Top Pick of the Week</h2>

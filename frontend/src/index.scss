@@ -19,6 +19,7 @@
 
         .hero_img_grudge {
             z-index: -1;
+
             img {
                 position: absolute;
                 bottom: 0;
@@ -74,13 +75,13 @@
 
 }
 
-// Navbar
-
 .navbar_wrapper {
     display: grid;
     align-items: center;
     grid-template-columns: auto 500px auto;
-    margin-top: 20px;
+    padding-top: 20px;
+    margin: 0 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
     .nav_logo {
         margin-right: 30px;
@@ -90,7 +91,6 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        // width: 100%;
 
         ul {
             display: flex;
@@ -105,9 +105,33 @@
                 a {
                     text-decoration: none;
                     color: white;
+                    /* Default color */
                     font-size: var(--font-medium);
+                    transition: color 0.3s ease;
+                    /* Smooth color transition */
                 }
             }
+        }
+    }
+
+    &.fixed {
+        position: fixed;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 300px 600px auto;
+        top: 0;
+        padding: 20px 40px;
+        margin: auto;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Optional shadow for effect */
+        z-index: 1000;
+        color: #080808;
+
+        .nav_items a {
+            color: black;
+            /* Change to black when fixed */
         }
     }
 
@@ -118,6 +142,7 @@
         column-gap: 20px;
     }
 }
+
 
 // about
 
@@ -292,6 +317,7 @@
             position: absolute;
             left: 180px;
         }
+
         .explore_img img:nth-child(1) {
             position: relative;
             height: 500px;

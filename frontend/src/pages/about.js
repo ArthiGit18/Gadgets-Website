@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-const About = () => {
+const About = React.forwardRef((props, ref) => {
     return (
-        <div className='about_wrapper'>
+        <div ref={ref} className='about_wrapper'>
             <div className='container'>
                 <div className='about_main'>
                     <h2>ABOUT GadgetBazar</h2>
@@ -10,7 +10,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+});
 
-export default About
+export default About;

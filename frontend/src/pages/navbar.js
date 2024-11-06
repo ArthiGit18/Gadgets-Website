@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -48,16 +48,39 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
-export const Navbar = () => {
+export const Navbar = ({ aboutRef }) => {
+    const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const heroHeight = document.querySelector('.hero_wrapper').offsetHeight;
+            setIsFixed(window.scrollY > heroHeight);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const handleScrollToAbout = () => {
+        if (aboutRef.current) {
+            aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <div className='navbar_wrapper'>
+        <div className={`navbar_wrapper ${isFixed ? 'fixed' : ''}`}>
             <div className='nav_logo'>
-                <img src="assets/logo/Logo (3).png" alt="Logo" />
+            <div className='nav_logo'>
+                <img
+                    src={isFixed ? "assets/logo/Logo (2).png" : "assets/logo/Logo (3).png"}
+                    alt="Logo"
+                />
+            </div>
             </div>
             <div className='nav_items'>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About us</a></li>
+                <li><a href="/" onClick={(e) => { e.preventDefault(); }}>Home</a></li>
+                <li><a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToAbout(); }}>About us</a></li>
                     <li><a href="/">Product</a></li>
                     <li><a href="/">Blog</a></li>
                     <li><a href="/">Contact</a></li>
