@@ -3,8 +3,9 @@
     grid-template-columns: 450px auto;
     align-items: center;
     column-gap: 30px;
-    padding: 40px;
+    padding: 0 40px;
     margin: auto;
+    height: 83vh;
 
     .hero_note {
         row-gap: 20px;
@@ -14,6 +15,18 @@
 
     .hero_img {
         position: relative;
+        z-index: 99;
+
+        .hero_img_grudge {
+            z-index: -1;
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 300px;
+                z-index: -1;
+                height: 450px;
+            }
+        }
 
         .hero_img_content {
             position: absolute;
@@ -26,14 +39,16 @@
             .hero_img_point4 {
                 padding: 10px;
                 border-radius: 20px;
-                background-color: #385790;
-                width: 150px;
+                border: 2px solid white !important;
+                background-color: rgb(37, 1, 72);
+                width: 180px;
                 text-align: center;
+                z-index: 1;
             }
 
             .hero_img_point1 {
                 position: absolute;
-                top: 200px;
+                top: 190px;
                 right: 0;
             }
 
@@ -65,7 +80,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: auto 500px auto;
-    margin: 20px 0;
+    margin-top: 20px;
 
     .nav_logo {
         margin-right: 30px;
@@ -125,9 +140,10 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 50px;
+    // color: white;
 
     .service_list1 {
-        background-color: #BBDEFB;
+        background-color: rgb(195, 151, 243);
         height: 200px;
         display: flex;
         align-items: end;
@@ -230,7 +246,7 @@
 
             div {
                 position: absolute;
-                background-color: #385790;
+                background-color: rgb(37, 1, 72);
                 bottom: 6px;
                 width: 100%;
                 border-radius: 0 0 10px 10px;
@@ -269,11 +285,21 @@
 
         .explore_img2 img:nth-child(1) {
             position: relative;
+            height: 500px;
         }
 
         .explore_img2 img:nth-child(2) {
             position: absolute;
             left: 180px;
+        }
+        .explore_img img:nth-child(1) {
+            position: relative;
+            height: 500px;
+        }
+
+        .explore_img img:nth-child(2) {
+            position: absolute;
+            right: 180px;
         }
     }
 }
@@ -285,10 +311,11 @@
     color: white;
     padding: 50px 0;
 
-    h2{
-    text-align: center;
-    padding: 30px 0;
+    h2 {
+        text-align: center;
+        padding: 30px 0;
     }
+
     // display: flex;
     // align-items: center;
     // justify-content: center;
@@ -299,7 +326,7 @@
         align-items: center;
         column-gap: 20px;
         padding: 50px 0;
-        
+
         .slides {
             display: flex;
             align-items: center;
@@ -319,7 +346,7 @@
             border-radius: 10px;
             text-align: center;
             transition: transform 0.5s, opacity 0.5s;
-            background-color: #385790;
+            background-color: rgb(37, 1, 72);
             height: 80vh;
             width: 400px;
 
@@ -330,7 +357,7 @@
                 transition: transform 0.5s;
             }
 
-            .customer_details h3{
+            .customer_details h3 {
                 color: #bbb;
                 margin-bottom: 10px;
             }
@@ -386,46 +413,47 @@
 
 // footer
 
-.footer_wrapper{
+.footer_wrapper {
     background-color: #080808;
     color: white;
 
-    .footer_main{
+    .footer_main {
         display: flex;
         justify-content: space-between;
         margin: 40px 0;
 
-        h3{
+        h3 {
             margin: 20px 0;
         }
 
-        
-        .footer_contact{
+
+        .footer_contact {
             display: flex;
             column-gap: 10px;
             align-items: flex-start;
         }
 
-        .links_footer{
+        .links_footer {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             row-gap: 10px;
-            p a{
-            text-decoration: none;
-            color: white;
+
+            p a {
+                text-decoration: none;
+                color: white;
             }
         }
 
-        .social_footer{
+        .social_footer {
             display: flex;
             column-gap: 10px;
         }
     }
 
-    .footer_copyright{
-        background-color: #385790;
+    .footer_copyright {
+        background-color: rgb(37, 1, 72);
         padding: 20px 0;
         text-align: center;
     }

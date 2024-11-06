@@ -13,12 +13,14 @@ const Explore = () => {
                     <Button variant='contained'>Buy Now</Button>
                 </div>
                 <div className='explore_img'>
-                    <img src="assets/Headphone.png" alt="HeadPhone" />
+                    {/* <img src="assets/Headphone.png" alt="HeadPhone" /> */}
+                    <img src="assets/grudge/4.png" alt="HeadPhone" />
+                    <img src="assets/2.png" alt="HeadPhone" />
                 </div>
             </div>
             <div className='explore_main'>
                 <div className='explore_img2'>
-                    <img src="assets/headphone/1 (1).png" alt="HeadPhone" />
+                    <img src="assets/grudge/4.png" alt="HeadPhone" />
                     <img src="assets/headphone/1 (2).png" alt="HeadPhone" />
                 </div>
                 <div className='explore_content'>

@@ -25,9 +25,10 @@ p{
 }
 
 Button{
-  background-color: #385790 !important;
-  border: none !important;
+  background-color: rgb(37, 1, 72) !important;
+  /* border: none !important; */
   border-radius: 30px !important;
+  border: 2px solid white !important;
 }
 
 .container {
@@ -44,7 +45,7 @@ Button{
   width: 100%;
   margin: auto;
   /* background-image: linear-gradient(90deg, rgba(21, 21, 21, 0.06) 0%, rgba(21, 21, 21, 0.06) 13%,rgba(18, 18, 18, 0.06) 13%, rgba(18, 18, 18, 0.06) 19%,rgba(196, 196, 196, 0.06) 19%, rgba(196, 196, 196, 0.06) 46%,rgba(7, 7, 7, 0.06) 46%, rgba(7, 7, 7, 0.06) 96%,rgba(162, 162, 162, 0.06) 96%, rgba(162, 162, 162, 0.06) 100%),linear-gradient(90deg, rgba(29, 29, 29, 0.08) 0%, rgba(29, 29, 29, 0.08) 44%,rgba(154, 154, 154, 0.08) 44%, rgba(154, 154, 154, 0.08) 57%,rgba(139, 139, 139, 0.08) 57%, rgba(139, 139, 139, 0.08) 88%,rgba(47, 47, 47, 0.08) 88%, rgba(47, 47, 47, 0.08) 89%,rgba(221, 221, 221, 0.08) 89%, rgba(221, 221, 221, 0.08) 97%,rgba(231, 231, 231, 0.08) 97%, rgba(231, 231, 231, 0.08) 100%),linear-gradient(90deg, rgba(2, 2, 2, 0.05) 0%, rgba(2, 2, 2, 0.05) 10%,rgba(124, 124, 124, 0.05) 10%, rgba(124, 124, 124, 0.05) 35%,rgba(10, 10, 10, 0.05) 35%, rgba(10, 10, 10, 0.05) 88%,rgba(253, 253, 253, 0.05) 88%, rgba(253, 253, 253, 0.05) 100%),linear-gradient(90deg, rgb(10,10,10),rgb(92,0,236),rgb(75,15,118)); */
-  background-image: radial-gradient(circle at center center, transparent 0%,rgb(18, 37, 68) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(34, 67, 121),rgb(42,83,149));
+  background-image: radial-gradient(circle at center center, transparent 0%,rgb(21, 1, 42) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(56, 8, 105),rgb(21, 1, 42));
   /* background-image: radial-gradient(circle at center center, transparent 0%,rgb(62,0,79) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(62,0,79),rgb(62,0,79)); */
 }
 
@@ -109,4 +110,110 @@ Button{
 .swiper-slide-active .testimonial-card {
   opacity: 1;
   transform: scale(1.1);
+}
+
+
+/* tradebar */
+/* Add the keyframes for sliding up */
+@keyframes slideUpTradebar {
+  0% {
+    bottom: -20%;
+    /* Start slightly below the visible area */
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.tradeBar {
+  position: absolute;
+  bottom: -20%;
+  /* Start slightly below the visible area */
+  z-index: 3;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation: slideUpTradebar 1s ease-out 1.5s forwards;
+  /* Add the animation */
+}
+
+.tradeBar div {
+  background: transparent;
+  color: #15161a;
+}
+
+.tradebar_content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.tradebar_content p {
+  background: transparent;
+  color: #15161a;
+  margin: auto;
+  background-color: rgb(37, 1, 72);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  z-index: 8;
+  padding: 10px 64px;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 2px dashed white;
+  border-left: none;
+}
+
+.tradebar_scroll img,
+.tradebar_item span {
+  background: transparent;
+  color: black;
+}
+
+.tradebar_scroll img {
+  height: 20px;
+  width: 20px;
+}
+
+.tradebar_scroll-wrapper {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  z-index: 5;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tradebar_scroll {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin: 0 30px;
+}
+
+.tradebar_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.tradebar_price {
+  font-size: 20px;
 }
