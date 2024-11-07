@@ -75,7 +75,7 @@
 
 }
 
-.navbar_wrapper {
+.navbar_wrapper, .NavbarCommon_wrapper {
     display: grid;
     align-items: center;
     grid-template-columns: auto 500px auto;

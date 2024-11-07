@@ -1,0 +1,92 @@
+.Product_Header{
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(21, 1, 42) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(56, 8, 105),rgb(21, 1, 42));
+    color: white;
+    height: 30vh;
+
+    .breadcums{
+        margin-top: 40px;
+    }
+}
+.product_list {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #c397f3;
+
+    /* Custom scrollbar */
+    &::-webkit-scrollbar {
+        height: 4px; /* Adjusted scrollbar height */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+    }
+
+    .product_new {
+        min-width: 150px;
+        text-align: center;
+
+        img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .product_new {
+            min-width: 100px;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+.product_common {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts to 3 columns */
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns */
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr; /* Stacks in a single column */
+    }
+
+    .product_detail {
+        background-color: #c397f3;
+        padding: 16px;
+        border-radius: 10px;
+        margin: 20px 0;
+        row-gap: 10px;
+
+        .product_img img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .product_actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        div{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+    }
+}

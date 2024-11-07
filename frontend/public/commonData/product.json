@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Smart Watch",
+        "image": "./assets/gadgets/3 (1).jpg",
+        "description": "A smart watch with advanced features."
+    },
+    {
+        "id": 2,
+        "name": "Smart TV",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "A smart TV with 4K resolution."
+    },
+    {
+        "id": 3,
+        "name": "Bluetooth Headphones",
+        "image": "./assets/gadgets/5.jpg",
+        "description": "Noise-canceling Bluetooth headphones."
+    },
+    {
+        "id": 4,
+        "name": "Wireless Earbuds",
+        "image": "./assets/gadgets/1 (1).png",
+        "description": "Compact wireless earbuds with great sound quality."
+    },
+    {
+        "id": 5,
+        "name": "Laptop",
+        "image": "./assets/gadgets/2 (1).jpg",
+        "description": "High-performance laptop for work and entertainment."
+    },
+    {
+        "id": 6,
+        "name": "Smartphone",
+        "image": "./assets/gadgets/3 (2).jpg",
+        "description": "Latest smartphone with a stunning camera and design."
+    },
+    {
+        "id": 7,
+        "name": "Tablet",
+        "image": "./assets/gadgets/3 (4).jpg",
+        "description": "Powerful tablet for productivity and entertainment."
+    },
+    {
+        "id": 8,
+        "name": "Gaming Console",
+        "image": "./assets/gadgets/3 (3).jpg",
+        "description": "Next-gen gaming console with amazing graphics."
+    },
+    {
+        "id": 9,
+        "name": "Smart Speakers",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "Smart speakers with voice control and excellent sound."
+    },
+    {
+        "id": 10,
+        "name": "Drone",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "High-definition drone for aerial photography."
+    },
+    {
+        "id": 11,
+        "name": "Camera",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "Digital camera for capturing beautiful moments."
+    },
+    {
+        "id": 12,
+        "name": "Electric Scooter",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "Eco-friendly electric scooter for commuting."
+    },
+    {
+        "id": 13,
+        "name": "Smart Light Bulbs",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "Smart light bulbs that can be controlled remotely."
+    },
+    {
+        "id": 14,
+        "name": "Virtual Reality Headset",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "Immersive virtual reality experience."
+    },
+    {
+        "id": 15,
+        "name": "Portable Power Bank",
+        "image": "./assets/gadgets/4.jpg",
+        "description": "Portable power bank to keep your devices charged on the go."
+    }
+]

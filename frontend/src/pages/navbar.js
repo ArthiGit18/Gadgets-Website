@@ -79,9 +79,9 @@ export const Navbar = ({ aboutRef }) => {
             </div>
             <div className='nav_items'>
                 <ul>
-                <li><a href="/" onClick={(e) => { e.preventDefault(); }}>Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about" onClick={(e) => { e.preventDefault(); handleScrollToAbout(); }}>About us</a></li>
-                    <li><a href="/">Product</a></li>
+                    <li><a href="/product-list">Product</a></li>
                     <li><a href="/">Blog</a></li>
                     <li><a href="/">Contact</a></li>
                 </ul>

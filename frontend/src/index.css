@@ -182,13 +182,15 @@ Button{
 }
 
 .tradebar_scroll img {
-  height: 20px;
-  width: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: rgb(215, 196, 233);
+  border-radius: 50%;
 }
 
 .tradebar_scroll-wrapper {
   display: flex;
-  animation: scroll 15s linear infinite;
+  animation: scroll 20s linear infinite;
   z-index: 5;
 }
 
