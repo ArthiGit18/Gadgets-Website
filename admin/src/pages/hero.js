@@ -68,7 +68,7 @@ const Hero = () => {
   return (
     <div>
       <button className="add-btn" onClick={() => document.getElementById('product-form').style.display = 'block'}>
-        Add Product
+        Create Product
       </button>
 
       <div id="product-form" style={{ display: 'none' }}>

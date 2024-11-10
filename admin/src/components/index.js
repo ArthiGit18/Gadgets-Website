@@ -1,10 +1,12 @@
 import React from 'react'
 import Hero from '../pages/hero'
+import Navbar from '../pages/navbar'
 
 const Main = () => {
   return (
     <div>
-        <Hero />
+      <Navbar />
+      <Hero />
     </div>
   )
 }

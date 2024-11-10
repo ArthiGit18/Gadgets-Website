@@ -1,12 +1,13 @@
-.Product_Header{
-    background-image: radial-gradient(circle at center center, transparent 0%,rgb(21, 1, 42) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(56, 8, 105),rgb(21, 1, 42));
+.Product_Header {
+    background-image: radial-gradient(circle at center center, transparent 0%, rgb(21, 1, 42) 99%), repeating-linear-gradient(0deg, rgba(163, 163, 163, 0.2) 0px, rgba(163, 163, 163, 0.2) 1px, transparent 1px, transparent 6px), repeating-linear-gradient(90deg, rgba(163, 163, 163, 0.2) 0px, rgba(163, 163, 163, 0.2) 1px, transparent 1px, transparent 6px), linear-gradient(90deg, rgb(56, 8, 105), rgb(21, 1, 42));
     color: white;
     height: 30vh;
 
-    .breadcums{
+    .breadcums {
         margin-top: 40px;
     }
 }
+
 .product_list {
     display: flex;
     overflow-x: auto;
@@ -15,7 +16,8 @@
 
     /* Custom scrollbar */
     &::-webkit-scrollbar {
-        height: 4px; /* Adjusted scrollbar height */
+        height: 4px;
+        /* Adjusted scrollbar height */
     }
 
     &::-webkit-scrollbar-thumb {
@@ -38,6 +40,7 @@
     @media (max-width: 768px) {
         .product_new {
             min-width: 100px;
+
             img {
                 height: 50px;
                 width: 50px;
@@ -46,21 +49,32 @@
     }
 }
 
+
+
+.search_filter {
+    // width: 500px !important;
+    margin: 30px auto;
+   
+}
+
 .product_common {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 60px;
 
     @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr); /* Adjusts to 3 columns */
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjusts to 3 columns */
     }
 
     @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjusts to 2 columns */
     }
 
     @media (max-width: 500px) {
-        grid-template-columns: 1fr; /* Stacks in a single column */
+        grid-template-columns: 1fr;
+        /* Stacks in a single column */
     }
 
     .product_detail {
@@ -72,18 +86,19 @@
 
         .product_img img {
             width: 100%;
-            height: 400px;
+            height: 350px;
             border-radius: 10px;
+            object-fit: cover;
         }
     }
 
-    .product_actions{
+    .product_actions {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 20px;
 
-        div{
+        div {
             display: flex;
             align-items: center;
             column-gap: 10px;
