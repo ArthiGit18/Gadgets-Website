@@ -20,7 +20,6 @@ const Main = () => {
         <Sellers />
         <Explore />
         <Testimonial />
-        <hr />
         <Footer />
     </div>
   );

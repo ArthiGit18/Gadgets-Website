@@ -14,26 +14,29 @@ const NewCollection = () => {
     }, []);
 
     return (
-        <div className='product_common container'>
-            {/* Product Listing */}
-            {productDetails.map(product => (
-                <div key={product._id} className='product_detail'>
-                    <div className='product_img'>
-                        <img src={`http://localhost:3001${product.imageUrl}`} alt={product.name} />
-                    </div>
-                    <div className='product_ref'>
-                        <h3>{product.name}</h3>
-                        <p>{product.description}</p>
-                        <div className='product_actions'>
-                            <Button variant='text'>View</Button>
-                            <div>
-                                <FavoriteIcon />
-                                <Button variant='text'>BUY NOW</Button>
+        <div className='container products_wrapper'>
+            <h2>Oue Newest Collections</h2>
+            <div className='product_common '>
+                {/* Product Listing */}
+                {productDetails.map(product => (
+                    <div key={product._id} className='product_detail'>
+                        <div className='product_img'>
+                            <img src={`http://localhost:3001${product.imageUrl}`} alt={product.name} />
+                        </div>
+                        <div className='product_ref'>
+                            <h3>{product.name}</h3>
+                            <p>{product.description}</p>
+                            <div className='product_actions'>
+                                <Button variant='text'>View</Button>
+                                <div>
+                                    <FavoriteIcon />
+                                    <Button variant='text'>BUY NOW</Button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 }

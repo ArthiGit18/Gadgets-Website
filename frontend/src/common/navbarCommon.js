@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -66,8 +66,8 @@ export const NavbarCommon = () => {
                 <li><a href="/">Home</a></li>
                 <li><a href="#about">About us</a></li>
                     <li><a href="/product-list">Product</a></li>
-                    <li><a href="/">Blog</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Customer Service</a></li>
                 </ul>
             </div>
             <div className='nav_actions'>
