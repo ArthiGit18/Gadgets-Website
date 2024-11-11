@@ -26,9 +26,13 @@ p{
 
 Button{
   background-color: rgb(37, 1, 72) !important;
-  /* border: none !important; */
   border-radius: 30px !important;
   border: 2px solid white !important;
+}
+
+Button:hover{
+box-shadow: rgba(99, 9, 255, 0.814) 0px 30px 60px -12px inset, rgba(99, 9, 255, 0.814) 0px 18px 36px -18px inset !important;
+
 }
 
 .container {
