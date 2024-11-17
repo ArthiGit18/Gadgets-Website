@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const smartwatchRoutes = require('./routes/smartwatch');
+const authRoutes = require('./routes/authRoutes');
 const app = express();
 const PORT = 3001;
 
@@ -21,6 +22,7 @@ mongoose.connect('mongodb://localhost/product_db', {
 
 // Routes
 app.use('/api/smartwatches', smartwatchRoutes);
+app.use('/api/auth', authRoutes);
 
 // Default route
 app.get('/', (req, res) => {

@@ -202,10 +202,11 @@
         }
 
         .contact_issues_wrapper {
-            h2{
+            h2 {
                 margin: 80px auto;
                 text-align: center;
             }
+
             .contact_issues {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -239,3 +240,34 @@
         }
     }
 }
+
+
+    .login_common {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        align-items: center;
+        text-align: center;
+        row-gap: 40px;
+        column-gap: 20px;
+        border-radius: 10px;
+        border: 2px solid white;
+
+        .login_img img{
+            width: 100%;
+            height: auto;
+        }
+
+        .login_form{
+            Button{
+                color: white;
+            }
+
+            .form_action_btn{
+                display: flex;
+
+                align-items: center;
+                justify-content: space-around;
+
+            }
+        }
+    }
